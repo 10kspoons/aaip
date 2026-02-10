@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-navy antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white transition-all duration-200 hover:bg-primary-600 hover:shadow-lg hover:shadow-primary/25 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 active:scale-[0.98];
+  }
+
+  .btn-cta {
+    @apply inline-flex items-center justify-center rounded-lg bg-cta px-6 py-3 text-base font-semibold text-white transition-all duration-200 hover:bg-cta-600 hover:shadow-lg hover:shadow-cta/25 focus:outline-none focus:ring-2 focus:ring-cta/50 focus:ring-offset-2 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-white px-6 py-3 text-base font-semibold text-white transition-all duration-200 hover:bg-white hover:text-navy focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 active:scale-[0.98];
+  }
+
+  .btn-outline-dark {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-navy px-6 py-3 text-base font-semibold text-navy transition-all duration-200 hover:bg-navy hover:text-white focus:outline-none focus:ring-2 focus:ring-navy/50 focus:ring-offset-2 active:scale-[0.98];
+  }
+
+  .section-padding {
+    @apply px-4 py-16 sm:px-6 md:py-24 lg:px-8;
+  }
+
+  .container-max {
+    @apply mx-auto max-w-7xl;
+  }
+
+  .gradient-mesh {
+    background-image:
+      radial-gradient(at 20% 80%, rgba(0, 212, 255, 0.12) 0px, transparent 50%),
+      radial-gradient(at 80% 20%, rgba(0, 102, 255, 0.12) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(0, 212, 255, 0.04) 0px, transparent 50%);
+  }
+
+  .neural-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300D4FF' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='60' cy='0' r='1.5'/%3E%3Ccircle cx='0' cy='60' r='1.5'/%3E%3Ccircle cx='60' cy='60' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}

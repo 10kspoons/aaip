@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aaip-website
+  namespace: barleycorn
+  labels:
+    app: aaip-website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aaip-website
+  template:
+    metadata:
+      labels:
+        app: aaip-website
+    spec:
+      imagePullSecrets:
+        - name: ptreg
+      containers:
+        - name: aaip-website
+          image: registry2.palmtech.com.au/bc-aaip:latest
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              memory: 256Mi
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aaip-website
+  namespace: barleycorn
+  labels:
+    app: aaip-website
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+  selector:
+    app: aaip-website

@@ -1,0 +1,295 @@
+import Link from "next/link";
+
+export default function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-navy via-navy-700 to-primary-900">
+      {/* Animated SVG Neural Network Background */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 1200 800"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {/* Connection lines */}
+          <g stroke="rgba(0,212,255,0.08)" strokeWidth="1">
+            <line x1="100" y1="150" x2="300" y2="200" />
+            <line x1="300" y1="200" x2="500" y2="100" />
+            <line x1="500" y1="100" x2="700" y2="250" />
+            <line x1="700" y1="250" x2="900" y2="180" />
+            <line x1="900" y1="180" x2="1100" y2="300" />
+            <line x1="200" y1="400" x2="400" y2="350" />
+            <line x1="400" y1="350" x2="600" y2="450" />
+            <line x1="600" y1="450" x2="800" y2="400" />
+            <line x1="800" y1="400" x2="1000" y2="500" />
+            <line x1="150" y1="600" x2="350" y2="550" />
+            <line x1="350" y1="550" x2="550" y2="650" />
+            <line x1="550" y1="650" x2="750" y2="580" />
+            <line x1="750" y1="580" x2="950" y2="700" />
+            <line x1="300" y1="200" x2="200" y2="400" />
+            <line x1="500" y1="100" x2="600" y2="450" />
+            <line x1="700" y1="250" x2="800" y2="400" />
+            <line x1="900" y1="180" x2="1000" y2="500" />
+            <line x1="400" y1="350" x2="350" y2="550" />
+            <line x1="600" y1="450" x2="750" y2="580" />
+            <line x1="150" y1="600" x2="100" y2="150" />
+            <line x1="950" y1="700" x2="1100" y2="300" />
+          </g>
+
+          {/* Static nodes */}
+          <g fill="rgba(0,212,255,0.15)">
+            <circle cx="100" cy="150" r="3" />
+            <circle cx="500" cy="100" r="4" />
+            <circle cx="900" cy="180" r="3" />
+            <circle cx="200" cy="400" r="3" />
+            <circle cx="600" cy="450" r="4" />
+            <circle cx="1000" cy="500" r="3" />
+            <circle cx="350" cy="550" r="3" />
+            <circle cx="950" cy="700" r="4" />
+          </g>
+
+          {/* Floating animated nodes */}
+          <g fill="rgba(0,212,255,0.2)">
+            <circle cx="300" cy="200" r="4">
+              <animate
+                attributeName="cy"
+                values="200;190;200"
+                dur="5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="700" cy="250" r="5">
+              <animate
+                attributeName="cy"
+                values="250;240;250"
+                dur="7s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="400" cy="350" r="3.5">
+              <animate
+                attributeName="cy"
+                values="350;342;350"
+                dur="6s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="800" cy="400" r="4.5">
+              <animate
+                attributeName="cy"
+                values="400;392;400"
+                dur="8s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="550" cy="650" r="3.5">
+              <animate
+                attributeName="cy"
+                values="650;642;650"
+                dur="5.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="750" cy="580" r="4">
+              <animate
+                attributeName="cy"
+                values="580;570;580"
+                dur="6.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="1100" cy="300" r="3">
+              <animate
+                attributeName="cy"
+                values="300;290;300"
+                dur="7.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="150" cy="600" r="4">
+              <animate
+                attributeName="cy"
+                values="600;590;600"
+                dur="6s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </g>
+
+          {/* Pulse glow nodes */}
+          <g fill="rgba(0,102,255,0.12)">
+            <circle cx="500" cy="100" r="12">
+              <animate
+                attributeName="opacity"
+                values="0.1;0.25;0.1"
+                dur="4s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="r"
+                values="12;16;12"
+                dur="4s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="700" cy="250" r="10">
+              <animate
+                attributeName="opacity"
+                values="0.1;0.2;0.1"
+                dur="5s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="r"
+                values="10;14;10"
+                dur="5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="600" cy="450" r="14">
+              <animate
+                attributeName="opacity"
+                values="0.08;0.18;0.08"
+                dur="6s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="r"
+                values="14;18;14"
+                dur="6s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </g>
+        </svg>
+      </div>
+
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-navy/30 pointer-events-none" />
+
+      {/* Main Content */}
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        {/* Party Name */}
+        <h1
+          className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight animate-fade-in-up"
+          style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
+        >
+          Australian{" "}
+          <span className="bg-gradient-to-r from-accent to-primary-300 bg-clip-text text-transparent">
+            AI
+          </span>{" "}
+          Party
+        </h1>
+
+        {/* Tagline */}
+        <p
+          className="text-xl md:text-2xl text-accent mb-10 font-medium animate-fade-in-up"
+          style={{
+            animationDelay: "0.15s",
+            textShadow: "0 1px 10px rgba(0,0,0,0.2)",
+          }}
+        >
+          Smarter decisions for all Australians
+        </p>
+
+        {/* CTA Buttons */}
+        <div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <Link href="/join" className="btn-cta text-lg px-8 py-4">
+            Join the Movement
+          </Link>
+          <Link href="/policies" className="btn-outline text-lg px-8 py-4">
+            Our Policies
+          </Link>
+        </div>
+
+        {/* Stats Bar */}
+        <div
+          className="animate-fade-in-up"
+          style={{ animationDelay: "0.45s" }}
+        >
+          <div className="inline-flex flex-col sm:flex-row items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-6 sm:px-10 py-5 gap-6 sm:gap-0 sm:divide-x sm:divide-white/10">
+            {/* Stat 1: 6 Key Policies */}
+            <div className="flex items-center gap-3 sm:pr-8">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg
+                  className="w-5 h-5 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+              <div className="text-left">
+                <p className="text-white font-bold text-lg leading-tight">6 Key Policies</p>
+                <p className="text-white/50 text-xs">Comprehensive platform</p>
+              </div>
+            </div>
+
+            {/* Stat 2: Transparent AI */}
+            <div className="flex items-center gap-3 sm:px-8">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg
+                  className="w-5 h-5 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <div className="text-left">
+                <p className="text-white font-bold text-lg leading-tight">Transparent AI</p>
+                <p className="text-white/50 text-xs">Open & accountable</p>
+              </div>
+            </div>
+
+            {/* Stat 3: Human Oversight */}
+            <div className="flex items-center gap-3 sm:pl-8">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg
+                  className="w-5 h-5 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <div className="text-left">
+                <p className="text-white font-bold text-lg leading-tight">Human Oversight</p>
+                <p className="text-white/50 text-xs">People-first approach</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+    </section>
+  );
+}
