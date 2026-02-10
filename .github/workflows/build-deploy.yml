@@ -1,0 +1,27 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, macOS, ARM64]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to registry
+        run: echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login registry2.palmtech.com.au -u "${{ secrets.REGISTRY_USERNAME }}" --password-stdin
+
+      - name: Build image
+        run: docker build --platform linux/arm64 -t registry2.palmtech.com.au/bc-aaip:latest .
+
+      - name: Push image
+        run: docker push registry2.palmtech.com.au/bc-aaip:latest
+
+      - name: Deploy to K3s
+        run: kubectl apply -f k8s/deployment.yaml
+
+      - name: Restart deployment
+        run: kubectl rollout restart deployment/aaip-website -n barleycorn

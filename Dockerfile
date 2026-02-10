@@ -1,4 +1,4 @@
-FROM node:22-alpine AS base
+FROM --platform=linux/arm64 node:22-alpine AS base
 
 FROM base AS deps
 WORKDIR /app
