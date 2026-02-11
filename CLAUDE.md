@@ -17,3 +17,16 @@
 **Runner**: `runs-on: [self-hosted, macOS, ARM64]` (Mac mini)
 **Registry**: `registry2.palmtech.com.au/bc-aaip:latest`
 **K8s namespace**: barleycorn
+
+### K8s Ingress — ALWAYS Use Cloudflare Tunnel
+
+**All public-facing services MUST use `ingressClassName: cloudflare-tunnel`** — NOT traefik, NOT nginx.
+
+The cluster has `strrl.dev/cloudflare-tunnel-ingress-controller` installed. It automatically:
+1. Creates DNS CNAME records in Cloudflare
+2. Handles TLS at the edge (no cert-manager needed)
+3. Routes traffic through CF tunnel to the cluster
+
+Add annotation: `cloudflare-tunnel-ingress-controller.strrl.dev/backend-protocol: http`
+
+**DO NOT** use traefik/nginx ingress, manually configure DNS, or use cert-manager for new services.
