@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { newsPosts } from "@/data/news";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbSchema, speakableSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "News & Updates",
   description:
     "Latest news, policy updates, and opinions from the Australian AI Party.",
+  openGraph: {
+    title: "News & Updates | Australian AI Party",
+    description:
+      "Stay informed with the latest policy developments, party news, and opinions from the Australian AI Party.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/news",
+  },
 };
 
 function getCategoryStyle(category: string): string {
@@ -34,6 +45,14 @@ export default function NewsPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "News", url: `${SITE_URL}/news` },
+        ])}
+      />
+      <JsonLd data={speakableSchema(["h1"])} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-navy via-navy-600 to-primary-900 pt-32 pb-16 md:pt-40 md:pb-20">
         <div

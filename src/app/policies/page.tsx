@@ -1,16 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { policies } from "@/data/policies";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbSchema, speakableSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Policies",
   description:
     "Explore the Australian AI Party's policy platform for AI-powered governance, digital rights, algorithmic transparency, and workforce transition.",
+  openGraph: {
+    title: "Policies | Australian AI Party",
+    description:
+      "Explore the Australian AI Party's comprehensive policy platform covering AI governance, digital rights, algorithmic transparency, and workforce transition.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/policies",
+  },
 };
 
 export default function PoliciesPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Policies", url: `${SITE_URL}/policies` },
+        ])}
+      />
+      <JsonLd data={speakableSchema(["h1", ".policy-intro"])} />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-400 to-navy pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="neural-pattern absolute inset-0 pointer-events-none" aria-hidden="true" />

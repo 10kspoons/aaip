@@ -1,3 +1,8 @@
+export interface PolicyFaq {
+  question: string;
+  answer: string;
+}
+
 export interface Policy {
   slug: string;
   title: string;
@@ -5,6 +10,7 @@ export interface Policy {
   icon: string;
   description: string[];
   keyPoints: string[];
+  faqs: PolicyFaq[];
 }
 
 export const policies: Policy[] = [
@@ -27,6 +33,28 @@ export const policies: Policy[] = [
       "Create a cross-party Parliamentary AI Governance Committee to oversee the deployment, ethics, and evolution of AI tools in the legislative process",
       "Invest $120 million over four years in parliamentary AI infrastructure, training, and digital literacy programs for all elected officials and their staff",
     ],
+    faqs: [
+      {
+        question: "What is the Parliamentary AI Advisory System (PAAS)?",
+        answer:
+          "PAAS is a proposed secure, non-partisan AI platform for all members of parliament and their staff. It would analyse draft legislation against existing law, model projected economic, social, and environmental impacts of proposed policies, and synthesise relevant research — while always presenting options and evidence rather than recommendations.",
+      },
+      {
+        question: "Will AI replace politicians under this policy?",
+        answer:
+          "No. The Australian AI Party's core principle is 'AI advises, humans decide.' AI tools would provide analysis and evidence to help parliamentarians make better-informed decisions, but all final decisions remain with elected representatives who are accountable to voters.",
+      },
+      {
+        question: "How would parliamentary AI tools be kept transparent and non-partisan?",
+        answer:
+          "The PAAS platform would be developed under open-source principles with full public documentation, subject to annual independent audits, and governed by a cross-party Parliamentary AI Governance Committee. All code and methodologies would be publicly available for scrutiny.",
+      },
+      {
+        question: "How much would the Parliamentary AI Advisory System cost?",
+        answer:
+          "The AAIP proposes investing $120 million over four years to fund parliamentary AI infrastructure, training, and digital literacy programs for all elected officials and their staff.",
+      },
+    ],
   },
   {
     slug: "transparent-algorithmic-governance",
@@ -46,6 +74,28 @@ export const policies: Policy[] = [
       "Establish an independent Office of the Algorithmic Auditor-General with powers to audit, investigate, and enforce compliance across all agencies",
       "Guarantee every Australian the legal right to a human review and plain-language explanation of any algorithmic decision affecting them",
       "Require annual public reporting on algorithmic system performance, error rates, bias testing outcomes, and complaints received",
+    ],
+    faqs: [
+      {
+        question: "What is the Algorithmic Transparency Register?",
+        answer:
+          "The Algorithmic Transparency Register is a proposed public database where every federal government agency must register all algorithmic decision-making systems. Each entry includes a plain-language explanation of what the algorithm does, what data it uses, how it was tested for bias, and what human oversight mechanisms are in place.",
+      },
+      {
+        question: "Can Australians challenge algorithmic decisions that affect them?",
+        answer:
+          "Yes. Under the proposed Algorithmic Accountability Act, every Australian would have the legal right to request a human review and plain-language explanation of any algorithmic decision that affects them personally, whether it relates to welfare, visa processing, or other government services.",
+      },
+      {
+        question: "What is an Algorithmic Impact Assessment?",
+        answer:
+          "An Algorithmic Impact Assessment is a mandatory evaluation required before any new automated decision-making system is deployed in government. Modelled on environmental impact statements, it evaluates risks including discrimination, accuracy, effects on vulnerable populations, and privacy implications.",
+      },
+      {
+        question: "Who would audit government algorithms?",
+        answer:
+          "An independent Office of the Algorithmic Auditor-General would be established with the mandate and technical expertise to conduct regular audits, compel agencies to modify or withdraw biased systems, and publish annual public reports on algorithmic performance across government.",
+      },
     ],
   },
   {
@@ -67,6 +117,23 @@ export const policies: Policy[] = [
       "Establish an independent Digital Rights Commissioner with investigation and enforcement powers, including the ability to impose significant financial penalties",
       "Mandate data breach notification within 72 hours and introduce a statutory right to compensation for individuals harmed by data misuse or algorithmic discrimination",
     ],
+    faqs: [
+      {
+        question: "What is the Digital Bill of Rights?",
+        answer:
+          "The Digital Bill of Rights is proposed legislation that would enshrine legally enforceable digital rights for all Australians, including data sovereignty (meaningful control over personal data), the right to explanation of AI decisions, protection from algorithmic discrimination, and strong biometric data protections.",
+      },
+      {
+        question: "Would facial recognition be banned in Australia?",
+        answer:
+          "The AAIP proposes prohibiting untargeted mass facial recognition surveillance in public spaces. Government agencies would require judicial authorisation on a case-by-case basis for targeted use. Private companies would need explicit, informed consent to collect any biometric data, and the sale or sharing of biometric data would be banned.",
+      },
+      {
+        question: "What is the right to explanation?",
+        answer:
+          "The right to explanation means that when an AI system makes or materially influences a decision affecting you — whether in employment, credit, insurance, housing, or government services — you have the legal right to understand what factors the system considered and how it reached its conclusion.",
+      },
+    ],
   },
   {
     slug: "ai-education-workforce",
@@ -86,6 +153,28 @@ export const policies: Policy[] = [
       "Partner with universities and TAFEs to create flexible, modular AI qualification pathways including apprenticeships, bootcamps, and micro-credentials",
       "Fund 5,000 new university places annually in AI, machine learning, data science, and related disciplines, with scholarships targeting underrepresented groups",
       "Create regional AI skills hubs in every state and territory to ensure Australians outside major cities have equal access to training and retraining opportunities",
+    ],
+    faqs: [
+      {
+        question: "What is the Australian AI Workforce Transition Fund?",
+        answer:
+          "The Australian AI Workforce Transition Fund is a proposed $2 billion program providing free or heavily subsidised retraining for workers in industries most affected by automation, including transport, logistics, retail, and administrative services. The fund includes income support during retraining periods.",
+      },
+      {
+        question: "When would AI literacy be taught in schools?",
+        answer:
+          "The AAIP proposes integrating AI literacy into the national curriculum from Year 3 onwards. This would cover how AI systems work, their capabilities and limitations, and the ethical questions they raise — not to make every student a programmer, but to equip future citizens to make informed decisions in an AI-shaped world.",
+      },
+      {
+        question: "How many jobs could be affected by AI in Australia?",
+        answer:
+          "Research suggests that up to 40 percent of Australian jobs will be significantly affected by AI and automation over the next decade. The AAIP's education and workforce policies aim to ensure Australians can transition into growing fields like AI system management, data analysis, and cybersecurity.",
+      },
+      {
+        question: "Will regional Australians have access to AI retraining?",
+        answer:
+          "Yes. The AAIP proposes creating regional AI skills hubs in every state and territory, along with AI apprenticeship programs targeting regional and rural communities, to ensure Australians outside major cities have equal access to training and retraining opportunities.",
+      },
     ],
   },
   {
@@ -107,6 +196,28 @@ export const policies: Policy[] = [
       "Implement rigorous privacy protections including mandatory de-identification standards, privacy impact assessments, and re-identification penalties",
       "Establish an Indigenous Data Sovereignty Framework developed in partnership with First Nations communities to govern data about Indigenous peoples, lands, and heritage",
     ],
+    faqs: [
+      {
+        question: "What is the Australian Open Data Platform?",
+        answer:
+          "The Australian Open Data Platform is a proposed centralised portal providing free access to government datasets in standardised, machine-readable formats. All federal agencies would be required to publish their non-sensitive datasets within 12 months, with clear metadata, data dictionaries, and API access for developers.",
+      },
+      {
+        question: "How would open data protect individual privacy?",
+        answer:
+          "The AAIP's Open Data Framework includes rigorous de-identification standards, privacy impact assessments for every published dataset, and strict prohibitions on publishing data that could enable re-identification of individuals. Privacy is a non-negotiable safeguard in the open data policy.",
+      },
+      {
+        question: "What are government performance dashboards?",
+        answer:
+          "Real-time government performance dashboards would allow Australians to track how public money is being spent, how government services are performing, and whether policy outcomes match political promises. Budget data, procurement records, grants, and program outcomes would be published in accessible formats.",
+      },
+      {
+        question: "How does the open data policy address Indigenous data sovereignty?",
+        answer:
+          "The AAIP would establish an Indigenous Data Sovereignty Framework developed in partnership with First Nations communities, recognising their right to control data about their communities, lands, and cultural heritage through culturally appropriate data governance frameworks.",
+      },
+    ],
   },
   {
     slug: "ethical-ai-framework",
@@ -126,6 +237,28 @@ export const policies: Policy[] = [
       "Prohibit unacceptable-risk AI applications including social credit scoring systems, manipulative AI targeting vulnerable populations, and untargeted predictive policing",
       "Require mandatory AI Ethics Impact Assessments for all high-risk AI deployments in both government and private sector, with public disclosure of assessment outcomes",
       "Pursue international mutual recognition agreements and actively contribute to global AI governance frameworks while championing Indigenous data sovereignty principles",
+    ],
+    faqs: [
+      {
+        question: "What is the National AI Ethics Board?",
+        answer:
+          "The National AI Ethics Board is a proposed independent statutory authority that would bring together experts in AI, ethics, law, civil liberties, consumer protection, and community representation — including mandated representation from Indigenous Australians, people with disabilities, and diverse communities. It would set binding AI Ethics Standards and investigate complaints.",
+      },
+      {
+        question: "How would AI applications be regulated under this framework?",
+        answer:
+          "AI applications would be classified into risk tiers: minimal risk (light-touch requirements), limited risk (transparency obligations), high risk (mandatory conformity assessments and human oversight), and unacceptable risk (prohibited outright). High-risk areas include employment, credit, healthcare, and criminal justice.",
+      },
+      {
+        question: "What AI applications would be banned in Australia?",
+        answer:
+          "The AAIP proposes prohibiting unacceptable-risk AI applications including social credit scoring systems, manipulative AI targeting vulnerable populations, and certain forms of untargeted predictive policing.",
+      },
+      {
+        question: "How would Australia's AI framework work internationally?",
+        answer:
+          "The AAIP would pursue mutual recognition agreements with like-minded nations, contribute to international AI governance frameworks, and ensure Australia's regulatory approach is interoperable with major trading partners while championing Indigenous data sovereignty in international forums.",
+      },
     ],
   },
 ];

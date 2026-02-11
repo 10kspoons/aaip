@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbSchema, howToSchema, speakableSchema } from "@/lib/seo";
 
 const STATES = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"] as const;
 
@@ -43,6 +45,35 @@ export default function JoinPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Join", url: `${SITE_URL}/join` },
+        ])}
+      />
+      <JsonLd
+        data={howToSchema({
+          name: "How to Join the Australian AI Party",
+          description:
+            "Join the Australian AI Party as a Free Supporter or Full Member to help shape AI-powered governance in Australia.",
+          steps: [
+            {
+              name: "Choose your membership tier",
+              text: "Select either Free Supporter ($0) for newsletters and public events, or Full Member ($25/year) for voting rights and the ability to shape party policy.",
+            },
+            {
+              name: "Fill out the registration form",
+              text: "Provide your name, email, address, date of birth, and confirm your electoral roll status.",
+            },
+            {
+              name: "Submit your registration",
+              text: "Agree to the party constitution and code of conduct, then complete your registration.",
+            },
+          ],
+        })}
+      />
+      <JsonLd data={speakableSchema(["h1", ".aeo-summary"])} />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy-700 to-primary-900 neural-pattern">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-navy/50 pointer-events-none" />
@@ -58,6 +89,15 @@ export default function JoinPage() {
               Be part of Australia&apos;s most forward-thinking political party
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Summary */}
+      <section className="bg-white border-b border-gray-100">
+        <div className="container-max px-4 sm:px-6 lg:px-8 py-8">
+          <p className="aeo-summary mx-auto max-w-3xl text-lg font-medium text-navy-300 leading-relaxed text-center">
+            The Australian AI Party offers two membership tiers: Free Supporter (no cost, includes newsletters and event access) and Full Member ($25/year, includes voting rights and the ability to shape party policy). All Australian citizens and residents eligible to enrol on the electoral roll can join.
+          </p>
         </div>
       </section>
 

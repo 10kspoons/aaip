@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import {
+  SITE_URL,
+  organizationSchema,
+  breadcrumbSchema,
+  speakableSchema,
+} from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the Australian AI Party - our vision, mission, values, and the team working to bring smarter governance to Australia.",
+    "Learn about the Australian AI Party (AAIP) - an Australian political party founded in 2026 that advocates for the ethical and effective use of artificial intelligence in government decision-making.",
+  openGraph: {
+    title: "About the Australian AI Party",
+    description:
+      "Learn about the Australian AI Party - our vision, mission, values, and the team working to bring smarter governance to Australia.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const partyAims = [
@@ -282,8 +298,31 @@ const constitutionPoints = [
 ];
 
 export default function AboutPage() {
+  const aboutOrg = {
+    ...organizationSchema(),
+    foundingDate: "2026-02-10",
+    knowsAbout: [
+      "Artificial Intelligence",
+      "AI Governance",
+      "Digital Rights",
+      "Algorithmic Transparency",
+      "Open Data",
+    ],
+  };
+
   return (
     <>
+      <JsonLd
+        data={aboutOrg}
+      />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "About", url: `${SITE_URL}/about` },
+        ])}
+      />
+      <JsonLd data={speakableSchema(["h1", ".aeo-summary"])} />
+
       {/* ===== Hero Banner ===== */}
       <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-400 to-primary-900">
         <div className="neural-pattern absolute inset-0" />
@@ -338,6 +377,15 @@ export default function AboutPage() {
           <div className="animate-float absolute right-8 top-1/2 hidden -translate-y-1/2 lg:block">
             <div className="h-64 w-64 rounded-full bg-accent/5 blur-3xl" />
           </div>
+        </div>
+      </section>
+
+      {/* ===== AEO Summary ===== */}
+      <section className="bg-white border-b border-gray-100">
+        <div className="container-max px-4 sm:px-6 lg:px-8 py-8">
+          <p className="aeo-summary mx-auto max-w-3xl text-lg font-medium text-navy-300 leading-relaxed text-center">
+            The Australian AI Party (AAIP) is an Australian political party founded in 2026 that advocates for the ethical and effective use of artificial intelligence in government decision-making. The party promotes transparent algorithmic governance, digital rights, and evidence-based policy across all levels of government.
+          </p>
         </div>
       </section>
 

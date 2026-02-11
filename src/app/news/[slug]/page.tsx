@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { newsPosts } from "@/data/news";
+import JsonLd from "@/components/JsonLd";
+import {
+  SITE_URL,
+  breadcrumbSchema,
+  articleSchema,
+  speakableSchema,
+} from "@/lib/seo";
 
 export function generateStaticParams() {
   return newsPosts.map((post) => ({ slug: post.slug }));
@@ -28,6 +35,9 @@ export async function generateMetadata({
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
+    },
+    alternates: {
+      canonical: `/news/${post.slug}`,
     },
   };
 }
@@ -101,6 +111,16 @@ export default async function NewsArticle({
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "News", url: `${SITE_URL}/news` },
+          { name: post.title, url: `${SITE_URL}/news/${post.slug}` },
+        ])}
+      />
+      <JsonLd data={articleSchema(post)} />
+      <JsonLd data={speakableSchema(["h1", "article p"])} />
+
       {/* Article Hero */}
       <section className="relative bg-gradient-to-br from-navy via-navy-600 to-primary-900 pt-32 pb-16 md:pt-40 md:pb-20">
         <div

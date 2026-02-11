@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { policies } from "@/data/policies";
+import JsonLd from "@/components/JsonLd";
+import {
+  SITE_URL,
+  breadcrumbSchema,
+  faqSchema,
+  speakableSchema,
+} from "@/lib/seo";
 
 export function generateStaticParams() {
   return policies.map((policy) => ({ slug: policy.slug }));
@@ -22,6 +29,14 @@ export async function generateMetadata({
   return {
     title: policy.title,
     description: policy.summary,
+    openGraph: {
+      title: policy.title,
+      description: policy.summary,
+      type: "article",
+    },
+    alternates: {
+      canonical: `/policies/${policy.slug}`,
+    },
   };
 }
 
@@ -44,6 +59,21 @@ export default async function PolicyPage({
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Policies", url: `${SITE_URL}/policies` },
+          {
+            name: policy.title,
+            url: `${SITE_URL}/policies/${policy.slug}`,
+          },
+        ])}
+      />
+      {policy.faqs.length > 0 && (
+        <JsonLd data={faqSchema(policy.faqs)} />
+      )}
+      <JsonLd data={speakableSchema(["h1", ".policy-summary"])} />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-400 to-navy pt-32 pb-16 md:pt-40 md:pb-24">
         <div
@@ -107,7 +137,7 @@ export default async function PolicyPage({
 
             {/* Summary */}
             <p
-              className="animate-fade-in-up mt-5 text-lg leading-relaxed text-white/70 sm:text-xl"
+              className="policy-summary animate-fade-in-up mt-5 text-lg leading-relaxed text-white/70 sm:text-xl"
               style={{ animationDelay: "0.2s" }}
             >
               {policy.summary}
@@ -156,8 +186,53 @@ export default async function PolicyPage({
         </div>
       </section>
 
+      {/* FAQ Section */}
+      {policy.faqs.length > 0 && (
+        <section className="section-padding bg-gray-50">
+          <div className="container-max">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+                Frequently Asked Questions
+              </h2>
+              <div className="mt-2 h-1 w-16 rounded-full bg-accent" />
+
+              <div className="mt-8 space-y-4">
+                {policy.faqs.map((faq, index) => (
+                  <details
+                    key={index}
+                    className="group rounded-xl border border-gray-200 bg-white"
+                  >
+                    <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-lg font-semibold text-navy transition-colors hover:text-primary [&::-webkit-details-marker]:hidden">
+                      <span className="pr-4">{faq.question}</span>
+                      <svg
+                        className="h-5 w-5 flex-shrink-0 text-gray-400 transition-transform duration-300 group-open:rotate-180"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </summary>
+                    <div className="px-6 pb-5">
+                      <p className="leading-relaxed text-gray-600">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Related Policies */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-white">
         <div className="container-max">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-2xl font-bold text-navy sm:text-3xl">

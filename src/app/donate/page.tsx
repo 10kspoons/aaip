@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbSchema, howToSchema, speakableSchema } from "@/lib/seo";
 
 const AMOUNTS = [10, 25, 50, 100, 250] as const;
 
@@ -59,6 +61,35 @@ export default function DonatePage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Donate", url: `${SITE_URL}/donate` },
+        ])}
+      />
+      <JsonLd
+        data={howToSchema({
+          name: "How to Donate to the Australian AI Party",
+          description:
+            "Support the Australian AI Party with a one-time contribution to fund policy research, community outreach, and AI governance tools.",
+          steps: [
+            {
+              name: "Choose your donation amount",
+              text: "Select a preset amount ($10, $25, $50, $100, $250) or enter a custom amount.",
+            },
+            {
+              name: "Fill in your details",
+              text: "Provide your full name and email address. Confirm you are an Australian citizen or permanent resident.",
+            },
+            {
+              name: "Submit your donation",
+              text: "Complete your donation. A receipt will be sent to your email. Donations over $14,500 are disclosed to the AEC.",
+            },
+          ],
+        })}
+      />
+      <JsonLd data={speakableSchema(["h1", ".aeo-summary"])} />
+
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-navy via-navy-400 to-navy overflow-hidden">
         <div className="absolute inset-0 neural-pattern" />
@@ -72,6 +103,15 @@ export default function DonatePage() {
               Your contribution powers evidence-based governance
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Summary */}
+      <section className="bg-gray-50 border-b border-gray-100">
+        <div className="container-max px-4 sm:px-6 lg:px-8 py-8">
+          <p className="aeo-summary mx-auto max-w-3xl text-lg font-medium text-navy-300 leading-relaxed text-center">
+            Donate to the Australian AI Party to fund policy research, community outreach, and the development of open-source AI governance tools. Donations are one-time contributions from Australian citizens and permanent residents. Donations over $14,500 must be disclosed to the Australian Electoral Commission.
+          </p>
         </div>
       </section>
 

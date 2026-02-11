@@ -2,6 +2,8 @@
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbSchema, faqSchema, speakableSchema } from "@/lib/seo";
 
 const inputClasses =
   "rounded-lg border border-gray-300 px-4 py-3 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors w-full";
@@ -65,6 +67,15 @@ export default function ContactPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Contact", url: `${SITE_URL}/contact` },
+        ])}
+      />
+      <JsonLd data={faqSchema(faqs)} />
+      <JsonLd data={speakableSchema(["h1", ".faq-section h2"])} />
+
       {/* ===== Hero Banner ===== */}
       <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-400 to-primary-900">
         <div className="neural-pattern absolute inset-0" />
