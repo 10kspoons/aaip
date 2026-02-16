@@ -10,6 +10,29 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
+    slug: "citizen-politicians-ai-augmented-governance",
+    title: "Citizen Politicians and the End of the Career Politician Monopoly",
+    date: "2026-02-15",
+    author: "AAIP",
+    category: "Opinion",
+    excerpt:
+      "Where did all the farmers go? How the pipeline from uni politics to staffer to safe seat killed diverse thinking in Australian politics - and how AI changes everything.",
+    content: [
+      "In 1983, Bob Hawke put together a cabinet that actually looked like the country it was supposed to run. Peter Walsh, Finance Minister, was a wheat and sheep farmer from Doodlakine. Bill Hayden had been a Queensland cop. Barry Jones was a high school teacher. John Button had been a solicitor who marched against Vietnam.",
+      "These weren't career politicians. They were citizens who rocked up to parliament because they had something useful to contribute. Expertise. Lived experience. A perspective that didn't come from sitting in a minister's office writing briefing papers about a world they'd never actually operated in.",
+      "Now look at the front bench of any major party today. Try to find the farmer. The doctor. The engineer. The small business owner who's actually met a payroll, chased a late-paying customer, lain awake at 2am wondering if the cash flow will cover wages on Thursday. Good luck with that.",
+      "Something profound shifted in Australian politics over the past three decades. The pathway to power narrowed to a single lane: university politics, political staffer, factional player, safe seat, frontbench.",
+      "Consider Jim Chalmers, the current Treasurer: university, PhD on Paul Keating, chief of staff to Wayne Swan, parliament. His real-world economic experience is entirely theoretical. This bloke is running the economy and his deepest private sector experience is writing a thesis about someone else running the economy.",
+      "The skills that get you preselected - factional deal-making, media management, saying nothing of substance with great conviction - are completely different from the skills that make good policy.",
+      "Here's the brutal result: between 1983 and 2000, Australia got floating the dollar, compulsory super, Medicare, tariff reform, the GST, and gun reform. Since then? Twenty-five years of nothing comparable. Productivity growth averaged 2.2% in the 1990s. It's been around 1% recently. The reform drought is real.",
+      "This is exactly why AI-augmented governance matters. The argument against citizen politicians has always been: 'You need years to understand parliament, to understand the policy landscape.' AI demolishes that barrier.",
+      "A farmer from the Darling Downs could have AI agents that synthesise legislation, model electorate impacts, and brief her in minutes. Her expertise - water policy, agricultural economics, supply chains - stays sharp because she's not drowning in parliamentary procedure.",
+      "We're not proposing AI replaces politicians. We're proposing AI makes it possible for different kinds of people to be politicians. People with careers to return to. People who aren't desperate to hold their seats. People who can afford to be brave.",
+      "The AAIP doesn't need to win government. The play is to win enough crossbench seats to force evidence-based policy into the national conversation. To prove citizen legislators can work. To break the career politician monopoly from the inside.",
+      "Reform is possible again. We just need the right people in parliament to make it happen."
+    ],
+  },
+  {
     slug: "aaip-officially-launches",
     title: "Australian AI Party Officially Launches",
     date: "2026-02-10",

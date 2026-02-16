@@ -15,250 +15,241 @@ export interface Policy {
 
 export const policies: Policy[] = [
   {
-    slug: "ai-assisted-decision-making",
-    title: "AI-Assisted Decision Making in Parliament",
+    slug: "housing-affordability",
+    title: "Housing Affordability",
     summary:
-      "Equipping parliamentarians with AI tools to analyse legislation, model policy outcomes, and make evidence-based decisions.",
-    icon: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5",
+      "Fixing Australia's broken housing market with evidence-based supply reform, tax restructure, and massive social housing investment. No magic bullets - real policy.",
+    icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
     description: [
-      "Australia's Parliament processes hundreds of bills each year, yet parliamentarians often lack the time and analytical tools to fully assess the long-term consequences of proposed legislation. The Australian AI Party believes that artificial intelligence can dramatically improve the quality of legislative decision-making by providing real-time analysis, economic modelling, and evidence synthesis — all while keeping elected representatives firmly in control of every decision.",
-      "Our policy proposes the creation of a Parliamentary AI Advisory System (PAAS), a secure, non-partisan platform available to all members of parliament and their staff. PAAS would analyse draft legislation against existing law to identify conflicts and redundancies, model the projected economic, social, and environmental impacts of proposed policies, and synthesise relevant research from Australian and international sources. Crucially, this system would present options and evidence — never recommendations — ensuring that human judgement remains at the centre of democratic governance.",
-      "AI can also transform the way parliamentarians engage with their constituents. Natural language processing tools can analyse thousands of submissions, emails, and survey responses to surface common themes, concerns, and priorities. Rather than relying on small sample sizes or anecdotal evidence, members of parliament would gain a comprehensive, data-driven understanding of what their electorates genuinely care about.",
-      "We recognise that trust is paramount. The PAAS platform would be developed under open-source principles with full public documentation, subject to annual independent audits, and governed by a cross-party parliamentary committee. No AI system should operate behind closed doors in a democracy, and we are committed to ensuring that these tools enhance transparency rather than diminish it.",
+      "Australia's housing market isn't just expensive - it's broken. The national mean dwelling price hit $1,045,400 in September 2025. In Sydney, it's $1,295,900. The median house price-to-income ratio is around 12:1 in Sydney and 9:1 nationally. Historically, 3-4:1 was considered affordable.",
+      "This isn't a market failure. It's a policy choice. Negative gearing costs the federal budget $10.9 billion per year in foregone tax revenue - projected to hit $12.3 billion in 2024-25. That's billions subsidising people who already own property at the expense of people who don't. The CGT discount creates a wealth-generation machine for existing asset holders. Supply is constrained by planning systems captured by NIMBYism.",
+      "The Reserve Bank warned in 2003 that resources were being 'disproportionately channelled into' property investment. That was over twenty years ago. The median Sydney house price has roughly tripled since then. We've done nothing.",
+      "There's no single fix - anyone promising one is lying. It requires supply-side planning reform, demand-side tax restructure, massive social housing investment, and the political courage to make changes that create short-term losers for long-term benefit. Career politicians haven't touched this because property owners vote more reliably than renters. We will."
     ],
     keyPoints: [
-      "Establish a Parliamentary AI Advisory System (PAAS) available to all MPs and senators, providing real-time bill analysis and impact modelling",
-      "Fund the development of AI-powered constituent feedback analysis tools that can process large volumes of public submissions while preserving privacy",
-      "Mandate open-source development and annual independent audits of all parliamentary AI tools to ensure transparency and non-partisanship",
-      "Create a cross-party Parliamentary AI Governance Committee to oversee the deployment, ethics, and evolution of AI tools in the legislative process",
-      "Invest $120 million over four years in parliamentary AI infrastructure, training, and digital literacy programs for all elected officials and their staff",
+      "Reform negative gearing: grandfather existing arrangements, but restrict new negative gearing to newly constructed housing only - shifting the subsidy from bidding up existing homes to building new supply",
+      "Replace the CGT discount with inflation indexation (the pre-1999 system) - more economically rational and removes the speculation arbitrage",
+      "AI-optimised planning reform: fast-track compliant approvals, transparent zoning modelling, data-driven infrastructure-linked rezoning. Kill NIMBYism with data.",
+      "Build 25,000 new social housing dwellings per year for a decade - the Grattan Institute recommendation. Fund it honestly.",
+      "Replace stamp duty with broad-based land tax as the Henry Review recommended 16 years ago",
+      "Publish all housing policy modelling publicly. Let anyone check our working."
     ],
     faqs: [
       {
-        question: "What is the Parliamentary AI Advisory System (PAAS)?",
+        question: "Will you ban negative gearing?",
         answer:
-          "PAAS is a proposed secure, non-partisan AI platform for all members of parliament and their staff. It would analyse draft legislation against existing law, model projected economic, social, and environmental impacts of proposed policies, and synthesise relevant research — while always presenting options and evidence rather than recommendations.",
+          "Not ban - reform. Grandfathering protects existing investors. New negative gearing would only apply to newly constructed housing, shifting the subsidy to where it actually adds supply. Deloitte modelling shows this reduces prices approximately 4.6% nationally and rents by 0.5%. Not a crash - a correction. Labor took this to two elections and lost. The lesson politicians took: never touch it. The lesson they should have taken: explain it better."
       },
       {
-        question: "Will AI replace politicians under this policy?",
+        question: "What about foreign buyers?",
         answer:
-          "No. The Australian AI Party's core principle is 'AI advises, humans decide.' AI tools would provide analysis and evidence to help parliamentarians make better-informed decisions, but all final decisions remain with elected representatives who are accountable to voters.",
+          "Foreign buyers account for 4-8% of purchases. They're a small part of the problem. Domestic policy settings - negative gearing, CGT discount, supply restrictions - are far more impactful. We'd enforce existing FIRB rules properly (they're adequate, enforcement is weak) but we won't scapegoat foreign buyers to avoid talking about the policies that actually drive unaffordability."
       },
       {
-        question: "How would parliamentary AI tools be kept transparent and non-partisan?",
+        question: "How quickly will housing become affordable?",
         answer:
-          "The PAAS platform would be developed under open-source principles with full public documentation, subject to annual independent audits, and governed by a cross-party Parliamentary AI Governance Committee. All code and methodologies would be publicly available for scrutiny.",
+          "Honestly? A decade to meaningfully shift affordability. The distortions built up over 25 years won't unwind in one electoral term. Anyone promising faster results is lying. The goal is to bend the curve: slow price growth, increase supply, shift incentives away from speculation."
       },
       {
-        question: "How much would the Parliamentary AI Advisory System cost?",
+        question: "Will house prices crash?",
         answer:
-          "The AAIP proposes investing $120 million over four years to fund parliamentary AI infrastructure, training, and digital literacy programs for all elected officials and their staff.",
-      },
+          "No. We're proposing reform, not shock therapy. Grandfathering existing negative gearing protects current investors. The modelled impact is around 4.6% price reduction nationally - a correction, not a crash. Millions of Australians have their life savings in their homes. Deliberately crashing prices would be devastating and irresponsible."
+      }
+    ]
+  },
+  {
+    slug: "tax-reform",
+    title: "Tax Reform & Economic Policy",
+    summary:
+      "Australia's tax system is rigged. Your local cafe pays 25% while multinationals pay single digits. 138 Henry Review recommendations, 3 implemented. Time to fix it.",
+    icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    description: [
+      "In 2008, the Rudd government commissioned the Henry Tax Review - a root and branch review of Australia's entire tax system. The panel spent two years doing rigorous work and came back with 138 recommendations. Evidence-based. Carefully modelled. Exactly the kind of reform agenda that could have set Australia up for the next twenty years.",
+      "The government implemented three of them. Three out of 138. Why? Because every reform creates losers, and career politicians whose careers depend on not creating losers will never touch them.",
+      "The result is a tax system that's been rigged over decades. The top 1% wealth share has grown from roughly 15% in the early 1990s to around 25% today. Multinationals use base erosion and profit shifting to pay effective tax rates in the single digits while your local cafe owner pays 25% on every dollar of profit. The OECD estimates BEPS costs governments globally $100-240 billion per year.",
+      "This isn't about punitive taxation or 'eat the rich' populism. It's about the blindingly obvious observation that when a small business can't structure transfer pricing to a subsidiary in Ireland, and a multinational can, something's broken. When negative gearing subsidises property speculation while productive investment gets no comparable break, the incentives are backwards."
     ],
+    keyPoints: [
+      "Implement OECD Pillar Two: 15% global minimum tax for multinationals. Australia signed on - now enforce it properly",
+      "Minimum effective corporate tax rate that can't be engineered away through transfer pricing and profit shifting",
+      "Close the negative gearing arbitrage that makes property speculation more attractive than productive investment",
+      "Replace stamp duty with land tax - the Henry Review's most ignored recommendation",
+      "Fund the ATO properly to challenge multinational profit shifting. Currently it's David vs Goliath with David's budget cut every year",
+      "Publish transparent, auditable tax modelling for every reform. Open-source the models. Let citizens see the numbers."
+    ],
+    faqs: [
+      {
+        question: "Are you proposing higher taxes?",
+        answer:
+          "We're proposing fairer taxes. That means higher effective rates for multinationals currently paying single digits, and potentially lower complexity for small businesses and individuals. The goal is a broader base at fair rates - not punitive taxes that drive investment offshore, but closing the loopholes that let sophisticated players game the system while everyone else pays full freight."
+      },
+      {
+        question: "Won't companies just leave Australia?",
+        answer:
+          "This argument has been used to block every tax reform in history. The OECD's global minimum tax framework exists precisely because unilateral action has limits. When Australia implements Pillar Two alongside other developed economies, there's nowhere to hide. And frankly, if a company's entire business model depends on not paying meaningful tax anywhere, we're not losing much."
+      },
+      {
+        question: "What about the Henry Review recommendations?",
+        answer:
+          "We'd implement the major ones that have been gathering dust for 16 years: land tax replacing stamp duty, genuine simplification of personal income tax, reform of negative gearing and CGT discount, proper resource rent taxation. The evidence hasn't changed - only the political courage to act on it has been missing."
+      }
+    ]
+  },
+  {
+    slug: "ai-workforce-transition",
+    title: "AI Workforce Transition",
+    summary:
+      "AI is eliminating white-collar jobs right now. Politicians won't say it. We will. Here's the honest assessment and what actually needs to happen.",
+    icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+    description: [
+      "Let's be blunt, because nobody in parliament will be: AI is going to eliminate millions of white-collar jobs. Not might. Not could. Is. It's already started. Accountants. Paralegals. Junior lawyers. Insurance assessors. Financial analysts. Junior software developers. Copywriters. Customer service. These aren't hypothetical future casualties - AI can already do significant portions of these jobs.",
+      "The Big Four consulting firms are already quietly restructuring. Law firms are discovering AI can do in minutes what used to require weeks of paralegal work. Banks have been shedding staff for years. This is not a drill.",
+      "The comfortable lies won't help you. UBI won't work - the maths don't add up ($500 billion for a modest version vs $680 billion total federal budget), and people need work for purpose and identity, not just money. You can't regulate your way out - Australia is 26 million people in a global economy of 8 billion. Government retraining programs have abysmal track records. The 52-year-old accountant isn't becoming a cybersecurity specialist.",
+      "What might actually work: adjacent role transition (accountant to AI-augmented financial advisor), entrepreneurship support for people with deep domain expertise, new hybrid work categories (AI trainers, audit specialists), and tax reform to ensure AI productivity gains are shared rather than hoarded by shareholders. We need to treat voters like adults who can handle the truth, not children who need to be protected from reality."
+    ],
+    keyPoints: [
+      "Commission honest sector-by-sector assessment of AI job displacement risk. Publish it. Let people see where they stand.",
+      "Fund genuine transition pathways: adjacent role shifts using existing expertise, not fantasy retraining into completely different careers",
+      "Support SME entrepreneurship as the landing zone for displaced workers - they have domain expertise and networks",
+      "Reform tax to share AI productivity gains: when companies replace workers with AI, those productivity gains shouldn't flow entirely to shareholders",
+      "Create new work categories that combine human judgment with AI capability - these need to be designed and supported",
+      "Portable benefits not tied to traditional employment - the future is more fluid"
+    ],
+    faqs: [
+      {
+        question: "Is AI going to take my job?",
+        answer:
+          "Maybe. If your job primarily involves processing information, applying rules to data, or generating documents from templates, AI can already do a significant portion of it. The question is when your employer acts on it. If your job involves human judgment, creativity, empathy, complex problem-solving, or managing people, the timeline is longer. We think you deserve an honest assessment rather than either panic or denial."
+      },
+      {
+        question: "Why won't UBI work?",
+        answer:
+          "The maths don't work. 20 million adults times $25,000 equals $500 billion. The federal budget is $680 billion. It would require roughly doubling income tax. It polls terribly because Australians believe adults should contribute. And most importantly, people need work - purpose, structure, identity - not just income. The mental health data on long-term unemployment is devastating."
+      },
+      {
+        question: "What about government retraining programs?",
+        answer:
+          "The evidence from every previous automation wave shows displaced workers over 45 overwhelmingly end up in lower-paid work or leave the workforce. The idea that a 52-year-old accountant will become a cybersecurity specialist through a six-month bootcamp is fantasy. What works: adjacent transitions using existing expertise with new tools. Not 'learn to code' but 'use AI alongside the knowledge you've built over decades.'"
+      },
+      {
+        question: "Why are career politicians useless on this issue?",
+        answer:
+          "They don't understand the technology. They're terrified of saying 'your job is going away.' They offer vague 'retraining' promises that sound like a plan but achieve nothing. And not one member of the current cabinet has ever managed a workforce through a technology transition. They've never had to look an employee in the eye and explain that their role is being automated."
+      }
+    ]
+  },
+  {
+    slug: "citizen-legislators",
+    title: "Citizen Legislators & AI-Augmented Governance",
+    summary:
+      "Break the career politician monopoly. AI tools can make it possible for farmers, doctors, and business owners to serve effectively without becoming lifelong politicians.",
+    icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+    description: [
+      "In 1983, Bob Hawke's cabinet included a wheat farmer who became Finance Minister, a cop, a teacher, a solicitor who marched against Vietnam. These were citizens who rocked up to parliament because they had something useful to contribute - expertise, lived experience, perspective that didn't come from writing briefing papers about a world they'd never operated in.",
+      "Today's parliament is a monoculture. The pathway to power has narrowed: university politics, political staffer, factional player, safe seat, frontbench. Jim Chalmers, the current Treasurer, has a PhD on Paul Keating and was chief of staff to Wayne Swan. His real-world economic experience is entirely theoretical. He's running the economy and his deepest private sector experience is writing a thesis about someone else running the economy.",
+      "AI can break this monopoly. The argument against citizen politicians has always been: 'You need years to understand parliament, to understand the policy landscape.' AI demolishes that barrier. A farmer from the Darling Downs could have AI agents that synthesise legislation, model electorate impacts, and brief her in minutes. Her expertise - water policy, agricultural economics, supply chains - stays sharp because she's not drowning in parliamentary procedure.",
+      "We're not proposing AI replaces politicians. We're proposing AI makes it possible for different kinds of people to be politicians - specifically, the citizen legislators who've been squeezed out. People with careers to return to. People who aren't desperate to hold their seats. People who can afford to be brave."
+    ],
+    keyPoints: [
+      "AI policy advisors for MPs: deep specialist knowledge in every policy domain, not generalist staffers who know a little about everything",
+      "Electorate agents that model bill impacts specifically for each electorate - real data, not party talking points",
+      "AI constituent management that lets geographically huge electorates be served effectively",
+      "Legislative drafting assistance that doesn't require party infrastructure - and the strings that come with it",
+      "Transparent, auditable policy modelling that anyone can check",
+      "Enable representatives to maintain their outside careers rather than becoming full-time political careerists"
+    ],
+    faqs: [
+      {
+        question: "Are you saying AI should run the country?",
+        answer:
+          "No. We're saying AI should make it possible for better humans to run the country. The human provides judgment, values, lived experience, accountability. The AI provides analytical horsepower and operational capacity. A parliament of citizens empowered by AI, not a parliament of AI."
+      },
+      {
+        question: "Don't we need experienced politicians?",
+        answer:
+          "We need experienced people. Not experienced politicians. Peter Walsh was a wheat farmer and became one of Australia's best Finance Ministers. Neal Blewett was an academic and ran the world's best HIV/AIDS response. Their experience was in the real world, not in the political machine. That's the experience we need more of."
+      },
+      {
+        question: "Isn't this unconstitutional?",
+        answer:
+          "AI as a policy advisor requires no constitutional change at all - it's just a tool. The more radical version where AI might instruct votes is legally questionable. But the practical version - citizen politicians using AI tools to serve effectively - is completely achievable within current frameworks."
+      }
+    ]
   },
   {
     slug: "transparent-algorithmic-governance",
     title: "Transparent Algorithmic Governance",
     summary:
-      "Every algorithm used in government must be explainable, auditable, and subject to democratic oversight.",
+      "Government already uses algorithms to make decisions about your life. You have no idea how they work. That's unacceptable in a democracy.",
     icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
     description: [
-      "Government agencies across Australia already use algorithms to make decisions that profoundly affect people's lives — from welfare eligibility assessments and fraud detection to visa processing and criminal risk scoring. Yet most Australians have no idea which algorithms are being used, how they work, or whether they contain biases that could lead to unfair outcomes. The Australian AI Party believes this opacity is incompatible with democratic governance.",
-      "We propose the Algorithmic Accountability Act, landmark legislation that would require every federal government agency to register all algorithmic decision-making systems in a public Algorithmic Transparency Register. Each entry would include a plain-language explanation of what the algorithm does, what data it uses, how it was tested for bias, and what human oversight mechanisms are in place. Australians would have the legal right to request an explanation of any algorithmic decision that affects them personally.",
-      "Mandatory Algorithmic Impact Assessments would be required before any new automated decision-making system is deployed in government. These assessments, modelled on environmental impact statements, would evaluate potential risks including discrimination against protected groups, accuracy and error rates, effects on vulnerable populations, and implications for privacy and civil liberties. Systems assessed as high-risk would require ministerial sign-off and ongoing monitoring.",
-      "To ensure ongoing accountability, we would establish an independent Office of the Algorithmic Auditor-General with the mandate and technical expertise to conduct regular audits of government algorithms. This office would have the power to compel agencies to modify or withdraw systems that demonstrate bias, inaccuracy, or disproportionate impact on particular communities. Annual public reports would keep Australians informed about how their government uses automated decision-making.",
+      "Government agencies across Australia already use algorithms to make decisions that profoundly affect people's lives - from welfare eligibility and fraud detection to visa processing and criminal risk scoring. Yet most Australians have no idea which algorithms are being used, how they work, or whether they contain biases that lead to unfair outcomes.",
+      "Robodebt was the warning we should have heeded. An automated income-averaging system issued hundreds of thousands of incorrect debt notices to vulnerable Australians. The algorithm was fundamentally flawed - it compared annual income data with fortnightly payments in a way that was mathematically invalid - but because the system operated as a black box, errors went undetected for years. The human cost was catastrophic.",
+      "Robodebt wasn't an aberration. It was a warning. Modern machine learning systems are far more complex than that basic averaging algorithm. Neural networks can process millions of variables and produce outputs that even their developers cannot fully explain. If we couldn't catch errors in simple calculations, how will we detect bias in systems whose internal logic is opaque?",
+      "Transparency is not just a technical safeguard - it's a democratic imperative. Citizens have a right to understand how decisions about their lives are being made. If we can't see how a system works, we can't hold anyone responsible when it fails."
     ],
     keyPoints: [
-      "Introduce the Algorithmic Accountability Act requiring registration of all government algorithms in a public Algorithmic Transparency Register",
-      "Mandate Algorithmic Impact Assessments before deployment of any automated decision-making system in federal government agencies",
-      "Establish an independent Office of the Algorithmic Auditor-General with powers to audit, investigate, and enforce compliance across all agencies",
-      "Guarantee every Australian the legal right to a human review and plain-language explanation of any algorithmic decision affecting them",
-      "Require annual public reporting on algorithmic system performance, error rates, bias testing outcomes, and complaints received",
+      "Algorithmic Transparency Register: every automated decision-making system used by government catalogued with plain-language explanations",
+      "Mandatory Algorithmic Impact Assessments before deployment - modelled on environmental impact statements, subject to public comment",
+      "Independent Algorithmic Auditor with power to inspect, test, and order remediation of biased or inaccurate systems",
+      "Legal right for every Australian to a human review and explanation of any algorithmic decision affecting them",
+      "Annual public reporting on error rates, bias testing outcomes, and complaints",
+      "AI-driven monitoring to catch the next Robodebt before it destroys lives"
     ],
     faqs: [
       {
-        question: "What is the Algorithmic Transparency Register?",
+        question: "What algorithms does government currently use?",
         answer:
-          "The Algorithmic Transparency Register is a proposed public database where every federal government agency must register all algorithmic decision-making systems. Each entry includes a plain-language explanation of what the algorithm does, what data it uses, how it was tested for bias, and what human oversight mechanisms are in place.",
+          "Welfare eligibility assessments, fraud detection, visa processing, criminal risk scoring, tax auditing, healthcare resource allocation, and dozens more. Most operate with minimal public visibility. The Algorithmic Transparency Register would change that."
       },
       {
-        question: "Can Australians challenge algorithmic decisions that affect them?",
+        question: "Can Australians challenge algorithmic decisions?",
         answer:
-          "Yes. Under the proposed Algorithmic Accountability Act, every Australian would have the legal right to request a human review and plain-language explanation of any algorithmic decision that affects them personally, whether it relates to welfare, visa processing, or other government services.",
+          "Under our proposed Algorithmic Accountability Act, every Australian would have the legal right to request a human review and plain-language explanation of any algorithmic decision affecting them. Currently, you often can't even find out an algorithm was involved."
       },
       {
-        question: "What is an Algorithmic Impact Assessment?",
+        question: "Won't transparency help people game the system?",
         answer:
-          "An Algorithmic Impact Assessment is a mandatory evaluation required before any new automated decision-making system is deployed in government. Modelled on environmental impact statements, it evaluates risks including discrimination, accuracy, effects on vulnerable populations, and privacy implications.",
-      },
-      {
-        question: "Who would audit government algorithms?",
-        answer:
-          "An independent Office of the Algorithmic Auditor-General would be established with the mandate and technical expertise to conduct regular audits, compel agencies to modify or withdraw biased systems, and publish annual public reports on algorithmic performance across government.",
-      },
-    ],
+          "This is the excuse used to keep every system opaque. Transparency doesn't mean publishing the specific thresholds that trigger an audit. It means publishing the methodology, the data sources, the testing for bias, and the human oversight mechanisms. Gaming requires hiding the rules. Accountability requires showing them."
+      }
+    ]
   },
   {
     slug: "digital-rights-privacy",
     title: "Digital Rights and Privacy",
     summary:
-      "Establishing a comprehensive Digital Bill of Rights to protect Australians in the age of AI.",
+      "The Privacy Act is from 1988 - designed for paper records and fax machines. Time for a Digital Bill of Rights that actually protects Australians.",
     icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
     description: [
-      "As artificial intelligence becomes embedded in every aspect of daily life, Australians need robust legal protections that go far beyond existing privacy legislation. Our current Privacy Act, last substantially reformed in 1988, was designed for a world of paper records and fax machines — not facial recognition, behavioural profiling, and predictive analytics. The Australian AI Party will introduce a comprehensive Digital Bill of Rights that establishes clear, enforceable protections for every Australian in the digital age.",
-      "At the heart of our Digital Bill of Rights is the principle of data sovereignty: Australians must have meaningful control over their personal data. This means genuine informed consent that goes beyond burying permissions in impenetrable terms of service, the right to access and port your data between services, the right to have your data deleted, and strict limits on how personal data can be collected, combined, and used for profiling. We will ban the practice of making essential services conditional on surrendering unnecessary personal data.",
-      "We will establish strong safeguards against mass surveillance and the misuse of biometric data. The use of live facial recognition technology in public spaces by government agencies will require judicial authorisation on a case-by-case basis, with a blanket prohibition on untargeted mass surveillance. Private companies will be prohibited from collecting biometric data without explicit, informed, and freely given consent. The sale or sharing of biometric data will be banned outright.",
-      "Our Digital Bill of Rights also enshrines the right to explanation: when an AI system makes or materially influences a decision affecting an individual — whether that concerns employment, credit, insurance, housing, or government services — that person has the right to understand what factors the system considered and how it reached its conclusion. We will also protect Australians against digital discrimination, ensuring that AI systems cannot be used to unfairly discriminate based on race, gender, age, disability, or socioeconomic status.",
+      "Australia's Privacy Act was last substantially reformed in 1988 - designed for a world of paper records and fax machines. It has no answer for facial recognition, behavioural profiling, predictive analytics, or the routine combination of datasets that makes your life an open book to companies and governments alike.",
+      "At the heart of our Digital Bill of Rights is data sovereignty: Australians must have meaningful control over their personal data. Not the fiction of 'consent' buried in impenetrable terms of service, but genuine informed consent, the right to access and port your data, the right to deletion, and strict limits on how data can be collected and combined for profiling.",
+      "We will establish strong safeguards against mass surveillance. Live facial recognition in public spaces by government agencies should require judicial authorisation - not blanket deployment with no oversight. Private companies should be prohibited from collecting biometric data without explicit consent. The sale of biometric data should be banned outright.",
+      "When AI makes or influences a decision about you - whether for employment, credit, insurance, or government services - you should have the right to understand what factors were considered and how the system reached its conclusion. This isn't about revealing trade secrets. It's about basic accountability."
     ],
     keyPoints: [
-      "Introduce a Digital Bill of Rights enshrining data sovereignty, the right to explanation, and protection from algorithmic discrimination as legally enforceable rights",
-      "Require genuine informed consent for personal data collection with a ban on conditioning essential services on unnecessary data surrender",
-      "Prohibit untargeted mass facial recognition surveillance in public spaces and ban the sale or sharing of biometric data without explicit consent",
-      "Establish an independent Digital Rights Commissioner with investigation and enforcement powers, including the ability to impose significant financial penalties",
-      "Mandate data breach notification within 72 hours and introduce a statutory right to compensation for individuals harmed by data misuse or algorithmic discrimination",
+      "Digital Bill of Rights enshrining data sovereignty, right to explanation, and protection from algorithmic discrimination",
+      "Genuine informed consent requirements - no more burying permissions in unreadable terms of service",
+      "Prohibit untargeted mass facial recognition surveillance in public spaces",
+      "Ban the sale or sharing of biometric data without explicit consent",
+      "Independent Digital Rights Commissioner with investigation and enforcement powers",
+      "Mandatory data breach notification within 72 hours with statutory compensation for harm"
     ],
     faqs: [
       {
-        question: "What is the Digital Bill of Rights?",
+        question: "Would facial recognition be banned?",
         answer:
-          "The Digital Bill of Rights is proposed legislation that would enshrine legally enforceable digital rights for all Australians, including data sovereignty (meaningful control over personal data), the right to explanation of AI decisions, protection from algorithmic discrimination, and strong biometric data protections.",
-      },
-      {
-        question: "Would facial recognition be banned in Australia?",
-        answer:
-          "The AAIP proposes prohibiting untargeted mass facial recognition surveillance in public spaces. Government agencies would require judicial authorisation on a case-by-case basis for targeted use. Private companies would need explicit, informed consent to collect any biometric data, and the sale or sharing of biometric data would be banned.",
+          "Untargeted mass surveillance in public spaces would be prohibited. Government agencies would need judicial authorisation for specific, targeted use. Private companies would need explicit, informed consent to collect biometric data. This isn't about stopping legitimate security - it's about stopping the normalisation of surveillance."
       },
       {
         question: "What is the right to explanation?",
         answer:
-          "The right to explanation means that when an AI system makes or materially influences a decision affecting you — whether in employment, credit, insurance, housing, or government services — you have the legal right to understand what factors the system considered and how it reached its conclusion.",
-      },
-    ],
-  },
-  {
-    slug: "ai-education-workforce",
-    title: "AI Education and Workforce Transition",
-    summary:
-      "Preparing every Australian for the AI economy through education, retraining, and support programs.",
-    icon: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222",
-    description: [
-      "The AI revolution will reshape Australia's economy as profoundly as the industrial revolution reshaped the 19th century. Research suggests that up to 40 percent of Australian jobs will be significantly affected by AI and automation over the next decade. While this transformation will create enormous new opportunities, it will also displace workers and demand entirely new skills. The Australian AI Party is committed to ensuring that no Australian is left behind in this transition — and that our education system prepares the next generation to thrive.",
-      "In schools, we will integrate AI literacy into the national curriculum from Year 3 onwards, ensuring every Australian child understands the basics of how AI systems work, their capabilities and limitations, and the ethical questions they raise. This is not about turning every student into a programmer — it is about equipping future citizens and voters with the knowledge to make informed decisions in an AI-shaped world. At the secondary level, we will fund specialist AI and data science streams alongside expanded access to computer science education.",
-      "For the existing workforce, we will establish the Australian AI Workforce Transition Fund, a $2 billion program providing free or heavily subsidised retraining for workers in industries most affected by automation. This fund will support workers in sectors like transport, logistics, retail, administrative services, and basic financial services to gain qualifications in growing fields including AI system management, data analysis, cybersecurity, renewable energy technology, and healthcare technology. The fund will include income support during retraining periods to ensure financial barriers do not prevent workers from upskilling.",
-      "We will partner with universities and TAFEs to create flexible, modular AI qualification pathways that allow working Australians to build skills incrementally. Micro-credentials, online courses, and intensive bootcamps will complement traditional degree programs. We will also work with industry to develop AI apprenticeship programs that combine hands-on workplace experience with formal training, particularly targeting regional and rural communities where access to educational opportunities is often limited.",
-    ],
-    keyPoints: [
-      "Integrate AI literacy into the national curriculum from Year 3, covering how AI works, its societal impacts, and ethical considerations",
-      "Establish a $2 billion Australian AI Workforce Transition Fund providing free retraining, micro-credentials, and income support for workers displaced by automation",
-      "Partner with universities and TAFEs to create flexible, modular AI qualification pathways including apprenticeships, bootcamps, and micro-credentials",
-      "Fund 5,000 new university places annually in AI, machine learning, data science, and related disciplines, with scholarships targeting underrepresented groups",
-      "Create regional AI skills hubs in every state and territory to ensure Australians outside major cities have equal access to training and retraining opportunities",
-    ],
-    faqs: [
-      {
-        question: "What is the Australian AI Workforce Transition Fund?",
-        answer:
-          "The Australian AI Workforce Transition Fund is a proposed $2 billion program providing free or heavily subsidised retraining for workers in industries most affected by automation, including transport, logistics, retail, and administrative services. The fund includes income support during retraining periods.",
+          "When AI makes or influences a decision affecting you - employment, credit, insurance, housing, government services - you have the legal right to understand what factors the system considered and how it reached its conclusion. Not 'the computer said no' but actual accountability."
       },
       {
-        question: "When would AI literacy be taught in schools?",
+        question: "How would this affect businesses?",
         answer:
-          "The AAIP proposes integrating AI literacy into the national curriculum from Year 3 onwards. This would cover how AI systems work, their capabilities and limitations, and the ethical questions they raise — not to make every student a programmer, but to equip future citizens to make informed decisions in an AI-shaped world.",
-      },
-      {
-        question: "How many jobs could be affected by AI in Australia?",
-        answer:
-          "Research suggests that up to 40 percent of Australian jobs will be significantly affected by AI and automation over the next decade. The AAIP's education and workforce policies aim to ensure Australians can transition into growing fields like AI system management, data analysis, and cybersecurity.",
-      },
-      {
-        question: "Will regional Australians have access to AI retraining?",
-        answer:
-          "Yes. The AAIP proposes creating regional AI skills hubs in every state and territory, along with AI apprenticeship programs targeting regional and rural communities, to ensure Australians outside major cities have equal access to training and retraining opportunities.",
-      },
-    ],
-  },
-  {
-    slug: "open-data-government",
-    title: "Open Data Government",
-    summary:
-      "Making government data open by default, enabling innovation and accountability.",
-    icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4",
-    description: [
-      "Government data belongs to the Australian people. Every year, federal agencies collect vast quantities of data on everything from health outcomes and environmental conditions to transport patterns and economic activity. Yet too much of this data remains locked away in siloed systems, inaccessible to researchers, entrepreneurs, journalists, and ordinary citizens who could put it to productive use. The Australian AI Party will make government data open by default, unlocking billions of dollars in potential economic and social value.",
-      "We will establish the Australian Open Data Platform, a centralised, well-documented portal providing free access to government datasets in standardised, machine-readable formats. All federal agencies will be required to publish their non-sensitive datasets within 12 months, with clear metadata, data dictionaries, and API access for developers. We will adopt international open data standards to ensure Australian data is interoperable with global datasets, enabling cross-border research and innovation.",
-      "Open data is not just about economic value — it is a powerful tool for democratic accountability. We will create real-time government performance dashboards that allow Australians to track how public money is being spent, how government services are performing, and whether policy outcomes match political promises. Budget data, procurement records, grants, and program outcomes will be published in accessible formats that enable genuine public scrutiny. When governments cannot hide behind data opacity, better decisions follow.",
-      "Critically, open data must never come at the expense of individual privacy. Our Open Data Framework will include rigorous de-identification standards, privacy impact assessments for every published dataset, and strict prohibitions on publishing data that could enable re-identification of individuals. We will also ensure that Indigenous data sovereignty principles are respected, working with First Nations communities to develop culturally appropriate data governance frameworks that recognise their right to control data about their communities, lands, and cultural heritage.",
-    ],
-    keyPoints: [
-      "Launch the Australian Open Data Platform requiring all federal agencies to publish non-sensitive datasets in standardised, machine-readable formats within 12 months",
-      "Create real-time government performance dashboards tracking public spending, service delivery metrics, and policy outcomes against stated targets",
-      "Mandate standardised API access to government datasets, enabling developers and researchers to build innovative applications and conduct analysis",
-      "Implement rigorous privacy protections including mandatory de-identification standards, privacy impact assessments, and re-identification penalties",
-      "Establish an Indigenous Data Sovereignty Framework developed in partnership with First Nations communities to govern data about Indigenous peoples, lands, and heritage",
-    ],
-    faqs: [
-      {
-        question: "What is the Australian Open Data Platform?",
-        answer:
-          "The Australian Open Data Platform is a proposed centralised portal providing free access to government datasets in standardised, machine-readable formats. All federal agencies would be required to publish their non-sensitive datasets within 12 months, with clear metadata, data dictionaries, and API access for developers.",
-      },
-      {
-        question: "How would open data protect individual privacy?",
-        answer:
-          "The AAIP's Open Data Framework includes rigorous de-identification standards, privacy impact assessments for every published dataset, and strict prohibitions on publishing data that could enable re-identification of individuals. Privacy is a non-negotiable safeguard in the open data policy.",
-      },
-      {
-        question: "What are government performance dashboards?",
-        answer:
-          "Real-time government performance dashboards would allow Australians to track how public money is being spent, how government services are performing, and whether policy outcomes match political promises. Budget data, procurement records, grants, and program outcomes would be published in accessible formats.",
-      },
-      {
-        question: "How does the open data policy address Indigenous data sovereignty?",
-        answer:
-          "The AAIP would establish an Indigenous Data Sovereignty Framework developed in partnership with First Nations communities, recognising their right to control data about their communities, lands, and cultural heritage through culturally appropriate data governance frameworks.",
-      },
-    ],
-  },
-  {
-    slug: "ethical-ai-framework",
-    title: "Ethical AI Framework for Australia",
-    summary:
-      "Creating a world-leading regulatory framework that promotes AI innovation while protecting Australian values.",
-    icon: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-    description: [
-      "Australia has an opportunity to become a global leader in ethical AI governance. While other nations rush to either deregulate AI entirely or impose heavy-handed restrictions that stifle innovation, we can chart a balanced course that encourages the development and deployment of AI systems that are safe, fair, transparent, and aligned with Australian values. The Australian AI Party's Ethical AI Framework will provide the regulatory certainty that industry needs while establishing robust safeguards that the public deserves.",
-      "The centrepiece of our framework is the establishment of a National AI Ethics Board, an independent statutory authority bringing together experts in artificial intelligence, ethics, law, civil liberties, consumer protection, and community representation — including mandated representation from Indigenous Australians, people with disabilities, and culturally and linguistically diverse communities. The Board will develop and regularly update binding AI Ethics Standards, provide guidance to industry and government, and have the power to investigate complaints and refer serious breaches for enforcement action.",
-      "We will introduce a risk-based regulatory approach modelled on international best practice. AI applications will be classified into risk tiers: minimal risk systems such as spam filters and recommendation engines will face light-touch requirements; limited risk systems like chatbots must meet transparency obligations; high-risk systems used in areas like employment, credit, healthcare, and criminal justice will face mandatory conformity assessments, human oversight requirements, and ongoing monitoring; and unacceptable risk applications — including social credit scoring, manipulative AI targeting vulnerable populations, and certain forms of predictive policing — will be prohibited outright.",
-      "International cooperation is essential in a world where AI systems and data flows cross borders freely. We will work to establish mutual recognition agreements with like-minded nations, contribute to international AI governance frameworks, and ensure that Australia's regulatory approach is interoperable with those of our major trading partners. We will also champion Indigenous data sovereignty in international forums, advocating for the recognition of First Nations peoples' rights to govern data about their communities and cultural heritage in all international AI agreements.",
-    ],
-    keyPoints: [
-      "Establish a National AI Ethics Board as an independent statutory authority with powers to set binding standards, investigate complaints, and enforce compliance",
-      "Implement a risk-based regulatory framework classifying AI applications into tiers with proportionate requirements, from light-touch to mandatory conformity assessments",
-      "Prohibit unacceptable-risk AI applications including social credit scoring systems, manipulative AI targeting vulnerable populations, and untargeted predictive policing",
-      "Require mandatory AI Ethics Impact Assessments for all high-risk AI deployments in both government and private sector, with public disclosure of assessment outcomes",
-      "Pursue international mutual recognition agreements and actively contribute to global AI governance frameworks while championing Indigenous data sovereignty principles",
-    ],
-    faqs: [
-      {
-        question: "What is the National AI Ethics Board?",
-        answer:
-          "The National AI Ethics Board is a proposed independent statutory authority that would bring together experts in AI, ethics, law, civil liberties, consumer protection, and community representation — including mandated representation from Indigenous Australians, people with disabilities, and diverse communities. It would set binding AI Ethics Standards and investigate complaints.",
-      },
-      {
-        question: "How would AI applications be regulated under this framework?",
-        answer:
-          "AI applications would be classified into risk tiers: minimal risk (light-touch requirements), limited risk (transparency obligations), high risk (mandatory conformity assessments and human oversight), and unacceptable risk (prohibited outright). High-risk areas include employment, credit, healthcare, and criminal justice.",
-      },
-      {
-        question: "What AI applications would be banned in Australia?",
-        answer:
-          "The AAIP proposes prohibiting unacceptable-risk AI applications including social credit scoring systems, manipulative AI targeting vulnerable populations, and certain forms of untargeted predictive policing.",
-      },
-      {
-        question: "How would Australia's AI framework work internationally?",
-        answer:
-          "The AAIP would pursue mutual recognition agreements with like-minded nations, contribute to international AI governance frameworks, and ensure Australia's regulatory approach is interoperable with major trading partners while championing Indigenous data sovereignty in international forums.",
-      },
-    ],
-  },
+          "Companies that already respect customer privacy and use data responsibly would see little change. Companies whose business model depends on harvesting and selling personal data without meaningful consent would need to adapt. That's the point. If your business model requires deceiving customers about how you use their data, it's not a business model worth protecting."
+      }
+    ]
+  }
 ];

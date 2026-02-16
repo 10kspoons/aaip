@@ -8,13 +8,13 @@ import JsonLd from "@/components/JsonLd";
 import { SITE_URL, breadcrumbSchema, speakableSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Australian AI Party | Smarter Decisions for All Australians",
+  title: "Australian AI Party | Citizen Politicians. Evidence Over Ideology.",
   description:
-    "The Australian AI Party advocates for the ethical and effective use of artificial intelligence in government decision-making. Join us in building a smarter, more transparent democracy.",
+    "Break the career politician monopoly. AI-augmented governance lets farmers, doctors, and business owners serve effectively without becoming lifelong politicians. Fix housing. End the reform drought. Evidence over ideology.",
   openGraph: {
-    title: "Australian AI Party | Smarter Decisions for All Australians",
+    title: "Australian AI Party | Citizen Politicians. Evidence Over Ideology.",
     description:
-      "The Australian AI Party advocates for the ethical and effective use of artificial intelligence in government decision-making.",
+      "Break the career politician monopoly. AI-augmented governance lets farmers, doctors, and business owners serve effectively without becoming lifelong politicians.",
     url: SITE_URL,
     type: "website",
   },

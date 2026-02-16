@@ -24,19 +24,57 @@ export const metadata: Metadata = {
 };
 
 const partyAims = [
-  "Promote the ethical and effective use of AI in Australian government decision-making",
-  "Advocate for transparent algorithmic governance where AI assists but humans retain oversight",
-  "Ensure all Australians benefit from AI advancement through education, retraining, and equitable access",
-  "Protect digital rights, data privacy, and democratic processes",
-  "Champion open data policies and government transparency",
-  "Foster Australia as a global leader in responsible AI governance",
+  "Break the career politician monopoly - enable citizen legislators with AI tools",
+  "End the reform drought with evidence-based policy, not focus-group-tested slogans",
+  "Fix housing through real policy reform, not platitudes about supply",
+  "Prepare Australia for AI workforce transition with honest assessment, not retraining theatre",
+  "Make government algorithms transparent and accountable - no more Robodebts",
+  "Put evidence over ideology in every policy decision",
 ];
 
 const values = [
   {
-    title: "Transparency",
+    title: "Citizen Politicians",
     description:
-      "All AI systems used in governance must be explainable and auditable",
+      "People with real-world expertise, careers to return to, and the courage to be brave",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        className="h-8 w-8"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Evidence Over Ideology",
+    description: "Follow the data wherever it goes, even when it's uncomfortable",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        className="h-8 w-8"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Radical Transparency",
+    description: "Publish everything. Models, data, funding. Let anyone check our work.",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -59,27 +97,8 @@ const values = [
     ),
   },
   {
-    title: "Human Oversight",
-    description: "AI assists decisions, humans make them",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        className="h-8 w-8"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Equity",
-    description: "AI benefits must reach all Australians",
+    title: "Intergenerational Fairness",
+    description: "Stop policy that benefits boomers at the expense of everyone younger",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -97,8 +116,8 @@ const values = [
     ),
   },
   {
-    title: "Privacy",
-    description: "Strong data protection as a fundamental right",
+    title: "Honest About Hard Problems",
+    description: "AI will displace jobs. Housing won't fix in one term. We'll tell you the truth.",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -116,8 +135,8 @@ const values = [
     ),
   },
   {
-    title: "Innovation",
-    description: "Embrace technology while managing risks",
+    title: "Human Judgment",
+    description: "AI provides analysis. Humans provide values, judgment, and accountability.",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -130,25 +149,6 @@ const values = [
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Evidence-Based",
-    description: "Policy driven by data and research, not ideology",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        className="h-8 w-8"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"
         />
       </svg>
     ),
@@ -384,7 +384,7 @@ export default function AboutPage() {
       <section className="bg-white border-b border-gray-100">
         <div className="container-max px-4 sm:px-6 lg:px-8 py-8">
           <p className="aeo-summary mx-auto max-w-3xl text-lg font-medium text-navy-300 leading-relaxed text-center">
-            The Australian AI Party (AAIP) is an Australian political party founded in 2026 that advocates for the ethical and effective use of artificial intelligence in government decision-making. The party promotes transparent algorithmic governance, digital rights, and evidence-based policy across all levels of government.
+            The Australian AI Party exists to break the career politician monopoly. We want a parliament of citizens - farmers, doctors, small business owners - empowered by AI tools to serve effectively without becoming lifelong politicians. Evidence over ideology. Reform over stagnation. Transparency over backroom deals.
           </p>
         </div>
       </section>
@@ -414,23 +414,17 @@ export default function AboutPage() {
                     d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
                   />
                 </svg>
-                Our Vision
+                The Problem
               </div>
               <h2 className="mb-6 text-3xl font-bold text-navy sm:text-4xl">
-                A smarter future for all Australians
+                Career politicians broke the system
               </h2>
               <p className="text-lg leading-relaxed text-navy-300">
-                An Australia where artificial intelligence serves every citizen,
-                where government decisions are informed by the best available
-                data, and where technology strengthens rather than undermines our
-                democratic values.
+                In 1983, Bob Hawke&apos;s cabinet included a wheat farmer, a cop, a teacher, and a solicitor who marched against Vietnam. Today&apos;s parliament is a monoculture: university politics, staffer job, factional player, safe seat, frontbench. The current Treasurer&apos;s real-world experience is a PhD thesis about someone else running the economy.
               </p>
               <div className="mt-8 rounded-xl border border-accent-100 bg-accent-50/50 p-6">
                 <p className="text-sm font-medium text-accent-800">
-                  We envision a government that harnesses the power of AI not to
-                  replace human judgement, but to enhance it -- making policy
-                  decisions more informed, more transparent, and more
-                  responsive to the needs of everyday Australians.
+                  Between 1983 and 2000, Australia got floating the dollar, compulsory super, Medicare, tariff reform, the GST, and gun reform. Since then? Twenty-five years of nothing comparable. Productivity growth has halved. The reform drought is real.
                 </p>
               </div>
             </div>
@@ -451,10 +445,10 @@ export default function AboutPage() {
                     d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5"
                   />
                 </svg>
-                Our Mission
+                What We&apos;re Actually Doing
               </div>
               <h2 className="mb-6 text-3xl font-bold text-navy sm:text-4xl">
-                Six aims driving our work
+                Not left. Not right. Empirical.
               </h2>
               <ul className="space-y-4">
                 {partyAims.map((aim, i) => (
@@ -501,63 +495,38 @@ export default function AboutPage() {
                   d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
                 />
               </svg>
-              Our Story
+              The Opportunity
             </div>
             <h2 className="mb-8 text-3xl font-bold text-navy sm:text-4xl">
-              Why We Started
+              AI Changes the Game
             </h2>
 
             <div className="space-y-6 text-lg leading-relaxed text-navy-300">
               <p>
-                Australia faces unprecedented challenges -- from climate change
-                and housing affordability to healthcare strain and economic
-                transformation. These are complex, interconnected problems that
-                demand more than slogans and three-word phrases. They demand the
-                best thinking, the best data, and the best tools available.
-                Traditional political parties, bound by ideology and factional
-                interests, too often fall short.
+                The argument against citizen politicians has always been: &ldquo;You need 15 years in the system to understand parliament, to understand the policy landscape, to build relationships with stakeholders.&rdquo; That argument is about to die.
               </p>
 
               <p>
-                Artificial intelligence is already transforming every industry it
-                touches. In healthcare, AI is detecting cancers earlier. In
-                agriculture, it is optimising crop yields across our vast
-                landscapes. In finance, it is identifying fraud in milliseconds.
-                Yet our government -- the institution with the greatest capacity
-                to improve lives at scale -- lags behind. Policy is still made
-                on instinct and anecdote when it could be informed by evidence
-                and modelling.
+                AI demolishes the complexity barrier. A farmer from the Darling Downs could have AI agents that synthesise legislation, model electorate impacts, and brief her in minutes rather than months. Legislative drafting becomes accessible without years of experience. Policy analysis that used to require a department can happen in an afternoon.
               </p>
 
               {/* Pull quote */}
               <blockquote className="my-8 rounded-xl border-l-4 border-accent bg-white p-6 shadow-sm">
                 <p className="text-xl font-medium italic text-navy">
-                  &ldquo;What if we used the best available tools to make the
-                  best possible decisions for all Australians?&rdquo;
+                  &ldquo;The farmer from the Darling Downs could serve effectively without becoming a career politician first. Her expertise - the whole reason she&apos;d be valuable - wouldn&apos;t have to atrophy while she learns the political ropes.&rdquo;
                 </p>
-                <cite className="mt-3 block text-sm font-medium text-navy-200 not-italic">
-                  -- The question that started it all
-                </cite>
               </blockquote>
 
               <p>
-                Our founders -- researchers, public servants, technologists,
-                and concerned citizens -- saw this gap and refused to accept it.
-                They came together across disciplines and political
-                backgrounds, united by a shared conviction: that Australians
-                deserve a government as smart as the technology in their
-                pockets. A government that uses data to understand problems, AI
-                to explore solutions, and democratic processes to choose the
-                right path forward.
+                We&apos;re not proposing AI replaces politicians. We&apos;re proposing AI makes it possible for different kinds of people to be politicians - specifically, the citizen legislators who&apos;ve been squeezed out by the professional political class.
               </p>
 
               <p>
-                The Australian AI Party was born from that simple, powerful
-                idea. Not a party of the left or the right, but a party of the
-                future. We believe that evidence-based governance, augmented by
-                artificial intelligence and anchored in human values, is not
-                just possible -- it is essential. And we are building the
-                movement to make it happen.
+                People with careers to return to. People who aren&apos;t desperate to hold their seats. People who can afford to be brave in the way Hawke, Keating, and Howard once were.
+              </p>
+
+              <p>
+                The AAIP doesn&apos;t need to win government. The play is to win enough crossbench seats to force evidence-based policy into the national conversation. To show that citizen legislators can work. To break the career politician monopoly from the inside.
               </p>
             </div>
           </div>
