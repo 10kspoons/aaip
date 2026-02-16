@@ -95,7 +95,7 @@ export default function Header() {
           >
             <AILogoMark />
             <div className="flex flex-col leading-tight">
-              <span className="text-lg font-bold tracking-tight text-white transition-colors group-hover:text-accent sm:text-xl">
+              <span className="hidden text-lg font-bold tracking-tight text-white transition-colors group-hover:text-accent sm:block sm:text-xl">
                 Australian AI Party
               </span>
               <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-accent/70 sm:block">
