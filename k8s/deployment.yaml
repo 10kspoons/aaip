@@ -41,6 +41,37 @@ spec:
             initialDelaySeconds: 5
             periodSeconds: 10
 ---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: aaip
+  namespace: barleycorn
+  annotations:
+    cloudflare-tunnel-ingress-controller.strrl.dev/backend-protocol: http
+spec:
+  ingressClassName: cloudflare-tunnel
+  rules:
+  - host: aaip.electricsheep.au
+    http:
+      paths:
+      - backend:
+          service:
+            name: aaip-website
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  - host: www.aaip.electricsheep.au
+    http:
+      paths:
+      - backend:
+          service:
+            name: aaip-website
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+---
 apiVersion: v1
 kind: Service
 metadata:
