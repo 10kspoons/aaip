@@ -251,5 +251,57 @@ export const policies: Policy[] = [
           "Companies that already respect customer privacy and use data responsibly would see little change. Companies whose business model depends on harvesting and selling personal data without meaningful consent would need to adapt. That's the point. If your business model requires deceiving customers about how you use their data, it's not a business model worth protecting."
       }
     ]
+  },
+  {
+    slug: "climate-change-honest-reckoning",
+    title: "Climate Change: An Honest Reckoning",
+    summary:
+      "Climate change is real and potentially civilisation-ending. But the renewables-and-EVs narrative has failed. Market economies can't price existential risk. AI might be the first tool capable of mediating the global sacrifice required.",
+    icon: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    description: [
+      "Climate change is real. It is driven by human activity. It is potentially civilisation-altering. These are not opinions — they are the conclusions of every major scientific institution on the planet, backed by decades of data. We state this plainly because too many political parties have turned climate into a culture war rather than treating it as what it is: the most complex coordination problem humanity has ever faced.",
+      "But here's where we part company with the comfortable narrative: the story that renewables, EVs, and carbon offsets will save us was always more marketing than physics. As physicist Sabine Hossenfelder has documented extensively, net zero by 2050 is not a realistic goal — and most of the plans to achieve it are fuelled by wishful thinking rather than rational analysis. Germany shut down its nuclear plants and went back to coal. Electric vehicle grid requirements are decades behind schedule. Corporate carbon neutrality pledges are being quietly abandoned worldwide. The IPCC's own carbon removal assumptions have been called 'unrealistic and potentially dangerous' by researchers at the University of Melbourne.",
+      "This doesn't mean we should give up. It means we need to stop lying to ourselves about the scale of what's required. Addressing climate change demands genuine sacrifice across every economy on Earth — reduced consumption, redirected investment, constrained growth in some sectors, and massive resource transfers from wealthy nations to developing ones. No politician in any democracy will say this because voters don't elect people who promise sacrifice. And market economies have no mechanism to price in the survival of civilisation — externalities that play out over decades and centuries are invisible to quarterly earnings.",
+      "This is where AI becomes not just relevant but potentially essential. The climate problem is fundamentally a coordination problem across 195 nations with wildly different economic interests, development stages, and political systems. Current mechanisms — the Paris Agreement, carbon trading schemes, bilateral deals — have failed because they rely on voluntary compliance with no enforcement, and because no human institution can model the cascading interactions between energy systems, agriculture, trade, demographics, and climate feedback loops across the entire planet simultaneously. AI can.",
+      "We propose developing AI systems capable of modelling global economic-climate interactions at a granularity no human institution has achieved — tracking real-time emissions, supply chains, energy grids, deforestation, and ocean chemistry across every nation. These systems could dynamically calculate fair carbon prices that account for each nation's development stage, historical emissions, and economic capacity. They could mediate carbon credit markets that actually work — not the current system where companies pay to plant trees that may never grow while continuing to emit. They could model the true cost of inaction in terms that markets understand, and propose trade-weighted carbon border adjustments that don't simply punish developing nations for being poor.",
+      "The EU Emissions Trading System shows this can work in principle — it exceeded €100 per tonne in 2023 and has demonstrably reduced emissions by 5-21% in studied schemes. But it covers only one bloc. The IPCC estimates that staying below 1.5°C requires carbon prices of $135-$5,500 per tonne by 2030. China's scheme is below $10. Most of the world has no scheme at all. An AI-mediated global system could bridge this gap — not by imposing a single price, but by calculating differentiated prices that are economically rational for each economy while collectively achieving the required global reduction.",
+      "This is not techno-utopianism. AI won't fix climate change by itself. But it might be the first tool sophisticated enough to mediate the kind of global economic coordination that climate change actually requires — coordination that has so far been beyond the capacity of human diplomacy, market mechanisms, or international law."
+    ],
+    keyPoints: [
+      "State the truth: climate change is real, human-caused, and potentially civilisation-ending. No equivocation, no culture war, no denial",
+      "Acknowledge the failure: renewables and EVs alone won't solve this. Net zero by 2050 on current trajectories is fantasy. The scale of required sacrifice has been systematically understated by every government",
+      "AI-mediated global carbon pricing: develop systems that can calculate differentiated, fair carbon prices for each economy based on development stage, historical emissions, and economic capacity — updated dynamically, not negotiated in decade-long diplomatic cycles",
+      "Real-time global emissions monitoring via AI: satellite data, supply chain tracking, energy grid analysis — making it impossible to cheat on commitments because the data is public and continuous",
+      "AI-modelled carbon border adjustments: trade-weighted mechanisms that prevent carbon leakage without punishing developing nations — economically rational, not politically motivated",
+      "Geoengineering research: fund serious research into solar radiation management and carbon capture as emergency measures. As Hossenfelder notes, most climate scientists now believe emission reduction alone won't keep damage manageable. We need backup plans.",
+      "Publish all models openly. If we're asking the world to make sacrifices based on AI analysis, the analysis must be fully transparent and auditable."
+    ],
+    faqs: [
+      {
+        question: "Are you climate deniers?",
+        answer:
+          "The opposite. We take climate change so seriously that we refuse to pretend comfortable half-measures will fix it. The science is unequivocal: human activity is warming the planet, the consequences are severe, and current mitigation efforts are grossly inadequate. Saying 'the current plan isn't working' is not denial — it's the prerequisite for developing a plan that might."
+      },
+      {
+        question: "Why won't renewables save us?",
+        answer:
+          "Renewables are part of the solution but not the whole solution. As of 2024, fossil fuels still produce almost two-thirds of global electricity. Solar and wind together produce about 10%. Grid storage technology is decades behind where it needs to be. EV infrastructure requires grid upgrades that aren't happening fast enough. Nuclear — which has a carbon footprint comparable to wind — was abandoned by countries like Germany for political rather than scientific reasons. The maths simply doesn't add up for a renewables-only path to net zero by 2050. We need every tool available, deployed rationally based on evidence rather than ideology."
+      },
+      {
+        question: "How would AI carbon pricing actually work?",
+        answer:
+          "Current carbon pricing fails because it's fragmented (the EU has a scheme, China has a weak one, most nations have nothing), based on political negotiation rather than economic modelling, and easily gamed. An AI system could model the entire global economy-climate interaction in real time — calculating what carbon price each nation needs to hit collective targets, accounting for trade flows so carbon doesn't just leak to unpriced jurisdictions, and dynamically adjusting as conditions change. Think of it as a global carbon market maker — not imposing prices, but calculating the economically rational ones that human diplomats can't."
+      },
+      {
+        question: "Isn't this just techno-utopianism?",
+        answer:
+          "No. AI won't fix climate change. Humans fixing climate change requires global coordination at a scale and complexity beyond anything we've achieved. AI is a tool that could make that coordination tractable. The Paris Agreement failed not because people don't care, but because 195 nations can't negotiate fast enough, can't model interactions well enough, and can't verify compliance. AI addresses all three limitations. The sacrifice still has to come from humans. AI just helps us figure out how to share it fairly."
+      },
+      {
+        question: "What about geoengineering?",
+        answer:
+          "We need to research it seriously. Stratospheric aerosol injection, marine cloud brightening, enhanced weathering, and direct air capture all need massive R&D investment. Most climate scientists — including previously skeptical ones — now acknowledge that emission reduction alone probably won't keep warming below dangerous levels. Geoengineering is not a replacement for emissions reduction; it's an emergency measure for the gap between what we're doing and what physics requires. Pretending we won't need it is the same kind of wishful thinking that got us here."
+      }
+    ]
   }
 ];
